@@ -1,4 +1,15 @@
+
+.nav {
+    height: 20vh;
+}
 .logo {
     height: 70px;
+}
 
+.main {
+    height: 60vh;
+}
+
+.footer {
+    height: 10vh;
 }

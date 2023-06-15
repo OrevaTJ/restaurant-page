@@ -1,42 +1,5 @@
-const container = document.getElementById('container');
 
-function component() {
-    const nav = document.createElement('nav');
-    const navDiv = document.createElement('div');
-    const navDiv1 = document.createElement('div');
-
-    // Logo
-    const logoLink = document.createElement('a');
-    logoLink.href = '../dist/index.html'
-
-    const logoImage = document.createElement('img');
-    logoImage.classList.add('logo');
-    logoImage.setAttribute('src', '../dist/images/logo.jpg');
-    logoLink.appendChild(logoImage);
-    navDiv.appendChild(logoLink);
-
-    // Nav links
-    const home = document.createElement('a');
-    home.href = '#';
-    home.textContent = 'Home'
-    const menu = document.createElement('a');
-    menu.href = '#';
-    menu.textContent = 'Menu';
-    const contact = document.createElement('a');
-    contact.href = '#';
-    contact.textContent = 'Contact';
-    navDiv1.appendChild(home);
-    navDiv1.appendChild(menu);
-    navDiv1.appendChild(contact);
-
-    nav.appendChild(navDiv);
-    nav.appendChild(navDiv1);
-
-    return nav;
-}
-
-function mainSection() {
-    const main = document.createElement('main');
+function homePage() {
     const div = document.createElement('div');
     const header = document.createElement('h3');
     header.textContent = 'Modern Regional African Cuisine'
@@ -59,14 +22,8 @@ function mainSection() {
     div.appendChild(heroImage);
     div.appendChild(header1);
     div.appendChild(para2);
-    main.appendChild(div)
 
-    return main
+    return div
 }
 
-function appendContainer() {
-    container.appendChild(component())
-    container.appendChild(mainSection())
-}
-
-export default appendContainer
+export default homePage
